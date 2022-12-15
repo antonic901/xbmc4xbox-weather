@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+    <string id="100">Одабери локацију</string>
+    <string id="101">Претрага је отказана</string>
+    <string id="102">Корисник је отказао претрагу</string>
+    <string id="103">Ниједна локација није пронађена</string>
+
+    <!-- Setting -->
+    <string id="930">Weather API:</string>
+    <string id="931">Локација 1</string>
+    <string id="932">Локација 2</string>
+    <string id="933">Локација 3</string>
+    <string id="934">Користи локацију</string>
+    <string id="935">Користи локације из XBMC:</string>
+</strings>

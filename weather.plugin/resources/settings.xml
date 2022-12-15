@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<category label="General">
+		<setting id="api" type="text" label="930" option="urlencoded" default="http://api.weatherapi.com/v1"></setting>
+		<setting id="Location1" label="931" type="action" action="RunScript($CWD/search.py,Location1)" default=""/>
+		<setting id="Location2" label="932" type="action" action="RunScript($CWD/search.py,Location2)" default=""/>
+		<setting id="Location3" label="933" type="action" action="RunScript($CWD/search.py,Location3)" default=""/>
+		<setting id="default" type="labelenum" label="934" default="1" values="1|2|3" />
+		<setting id="use-from-xbmc" type="bool" label="935" default="true" />
+	</category>
+</settings>
