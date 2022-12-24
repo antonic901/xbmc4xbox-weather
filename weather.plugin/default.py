@@ -1,3 +1,16 @@
+"""
+    Quick overview of how weather plugins should be implemented:
+        1. When XBMC calls weather plugins it will pass three sys arguments
+        2. You can acces these arguments with sys.argv[i]:
+            a) sys.argv[0] -> returns weather plugin id (id from addon.xml)
+            b) sys.argv[1] -> returns areacode from XBMC in "lat;lon" format (ex. 40.50;-70.04)
+            c) sys.argv[2] -> returns areacode index (1, 2 or 3). You can use this info to make plugin locations independant from XBMC locations
+        3. Extract latitude and longitude from areacode and use that info to get weather data from some Weather API
+        4. Get Weather window by calling "xbmcgui.Window(12600)" and then use setProperty("name", value) method to set properties of window with data you get from API
+
+    INFO: Weather Window properties are dependent on Skin you are using. If skin is written wrong maybe some infos won't show.
+          All official skins (PM3.HD, Project Mayhem, Confluence and Confluence Lite) should work without any problem.
+"""
 import os,sys,json
 import xbmc, xbmcgui,xbmcaddon
 import requests
@@ -10,7 +23,7 @@ addon = xbmcaddon.Addon()
 """
 This whole crap will be removed when I implement searching from XBMC Settings
 """
-defaultLocation = "Location{}".format(addon.getSetting('default'))
+defaultLocation = "Location{}".format(sys.argv[2])
 locations = None
 lat = lon = None
 if addon.getSetting('use-from-xbmc') == 'false':
@@ -26,6 +39,7 @@ if addon.getSetting('use-from-xbmc') == 'false':
         lat = locations[defaultLocation]['lat']
         lon = locations[defaultLocation]['lon']
     except KeyError:
+        # fallback to XBMC locations
         lat, lon = sys.argv[1].split(';', 1)
 else:
     lat, lon = sys.argv[1].split(';', 1)
@@ -67,7 +81,7 @@ WEATHER_WINDOW.setProperty("Current.Wind", "{} {} {} {} {}".format(
 ))
 
 i = 0
-for day in weather['forecast']['forecastday']:
+for day in weather['forecast']['forecastday'][1:]:
     WEATHER_WINDOW.setProperty("Day{}.Title".format(i), getLocalizedDay(datetime.fromtimestamp(day['date_epoch']).strftime('%A')))
     WEATHER_WINDOW.setProperty("Day{}.OutlookIcon".format(i), "http:{}".format(day['day']['condition']['icon']))
     WEATHER_WINDOW.setProperty("Day{}.HighTemp".format(i), int(day['day']['maxtemp_{}'.format(getLocalizedTempUnit(xbmc.getRegion('tempunit')))]))
