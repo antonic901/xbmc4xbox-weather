@@ -4,7 +4,7 @@ Finally we are close to fixing Weather in XBMC4Xbox! This is beta release and be
 ## Support
 <a href="https://www.buymeacoffee.com/antonic901" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 ## Requirements
-1. **[OPTIONAL]** Latest release of XBMC4Xbox. Version 3.5.3 should work, but 3.7 is recommended
+1. **[OPTIONAL]** Latest release of [XBMC4Xbox](https://www.xbmc4xbox.org.uk/). Version 3.5.3 should work, but 3.7 is recommended
 2. You need to have **script.module.requests** inside **Q:\scripts\.modules**
 3. If you don't have it you can find it inside **modules** folder of **plugin.weather.zip** you downloaded. Copy from **modules** script.module.requests to **Q:\scripts\.modules**
 4. Restart your Xbox
