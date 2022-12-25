@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+    <string id="100">Select location</string>
+    <string id="101">Searching is cancelled</string>
+    <string id="102">User cancelled search</string>
+    <string id="103">No locations found</string>
+
+    <!-- Setting -->
+    <string id="930">Weather API:</string>
+    <string id="931">Location 1</string>
+    <string id="932">Location 2</string>
+    <string id="933">Location 3</string>
+    <string id="934">Default location</string>
+    <string id="935">Use locations from XBMC:</string>
+</strings>

@@ -1,0 +1,92 @@
+[
+    {
+        "id": 2830558,
+        "name": "Novi Sad",
+        "region": "Autonomna Pokrajina Vojvodina",
+        "country": "Serbia",
+        "lat": 45.25,
+        "lon": 19.84,
+        "url": "novi-sad-autonomna-pokrajina-vojvodina-serbia"
+    },
+    {
+        "id": 2830539,
+        "name": "Petrovaradin",
+        "region": "Autonomna Pokrajina Vojvodina",
+        "country": "Serbia",
+        "lat": 45.25,
+        "lon": 19.88,
+        "url": "petrovaradin-autonomna-pokrajina-vojvodina-serbia"
+    },
+    {
+        "id": 2830499,
+        "name": "Veternik",
+        "region": "Serbia (general)",
+        "country": "Serbia",
+        "lat": 45.26,
+        "lon": 19.76,
+        "url": "veternik-serbia-general-serbia"
+    },
+    {
+        "id": 2830467,
+        "name": "Rumenka",
+        "region": "Serbia (general)",
+        "country": "Serbia",
+        "lat": 45.29,
+        "lon": 19.74,
+        "url": "rumenka-serbia-general-serbia"
+    },
+    {
+        "id": 2830536,
+        "name": "Sremski Karlovci",
+        "region": "Autonomna Pokrajina Vojvodina",
+        "country": "Serbia",
+        "lat": 45.2,
+        "lon": 19.93,
+        "url": "sremski-karlovci-autonomna-pokrajina-vojvodina-serbia"
+    },
+    {
+        "id": 2830332,
+        "name": "Kisac",
+        "region": "Serbia (general)",
+        "country": "Serbia",
+        "lat": 45.35,
+        "lon": 19.73,
+        "url": "kisac-serbia-general-serbia"
+    },
+    {
+        "id": 2830529,
+        "name": "Kovilj",
+        "region": "Autonomna Pokrajina Vojvodina",
+        "country": "Serbia",
+        "lat": 45.23,
+        "lon": 20.02,
+        "url": "kovilj-autonomna-pokrajina-vojvodina-serbia"
+    },
+    {
+        "id": 2830454,
+        "name": "Vrdnik",
+        "region": "Serbia (general)",
+        "country": "Serbia",
+        "lat": 45.12,
+        "lon": 19.79,
+        "url": "vrdnik-serbia-general-serbia"
+    },
+    {
+        "id": 2827354,
+        "name": "Prnjavor",
+        "region": "Serbia (general)",
+        "country": "Serbia",
+        "lat": 45.12,
+        "lon": 19.94,
+        "url": "prnjavor-serbia-general-serbia"
+    },
+    {
+        "id": 2830358,
+        "name": "Cortanovci",
+        "region": "Serbia (general)",
+        "country": "Serbia",
+        "lat": 45.16,
+        "lon": 20.02,
+        "url": "cortanovci-serbia-general-serbia"
+    }
+]
