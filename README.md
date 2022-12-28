@@ -19,8 +19,8 @@ Finally we are close to fixing Weather in XBMC4Xbox! This is beta release and be
 1. Go to System -> Settings -> Weather
 2. Select Weather plugin to be weather.plugin
 3. Click Plugin settings
-4. Click on Location 1, enter search query and select location. Do the same for for second and third location
-5. ATTENTION!! After you selected all three locations click CANCEL. If you clik OK it won't remember anything. Don't ask me why :)
+4. Click on Location 1, enter search query and select location. Do the same for second and third location
+5. **ATTENTION!!** After you selected all three locations click CANCEL. If you clik OK it won't remember anything. Don't ask me why :)
 6. Open again Plugin settings and check are locations remembered.
 7. Go to weather settings and after couple of seconds you should see weather data
 
