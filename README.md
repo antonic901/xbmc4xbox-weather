@@ -12,7 +12,7 @@ Finally we are close to fixing Weather in XBMC4Xbox! This is beta release and be
 ## How to install
 1. Extract archive **plugin.weather.zip**
 2. Inside that archive you should find **XBMC** folder
-3. Copy all files from **XBMC** folder to **Q:\** (XBMC4Xbox's root) and replace all files that it's telling you
+3. Copy all files from **XBMC** folder to **Q:\\** (XBMC4Xbox's root) and replace all files that it's telling you
 4. Restart your Xbox. Turn it off completely and then turn it on again
 
 ## How to configure this plugin
