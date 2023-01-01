@@ -35,13 +35,19 @@ def save(location):
         'country': location['country']
     }
     if not os.path.exists('special://profile/plugin_data/weather/weather.plugin'):
+        '''
+            this is some hackery :( 
+            os.makedirs() fails to recursively create 'special://profile/plugin_data'
+            so we first create plugin_data with os.mkdir() and then proceed with os.makedirs()
+        '''
+        os.mkdir('special://profile/plugin_data')
         os.makedirs('special://profile/plugin_data/weather/weather.plugin')
     file = open('special://profile/plugin_data/weather/weather.plugin/locations.json', 'w+')
     file.write(json.dumps(locations))
     file.close()
 
 
-keyboard = xbmc.Keyboard('novi sad')
+keyboard = xbmc.Keyboard()
 keyboard.doModal()
 
 if keyboard.isConfirmed() and  keyboard.getText() != '':
