@@ -23,7 +23,13 @@ addon = xbmcaddon.Addon()
 """
 This whole crap will be removed when I implement searching from XBMC Settings
 """
-defaultLocation = "Location{}".format(sys.argv[2])
+defaultLocation = None
+if len(sys.argv) == 3:
+    defaultLocation = "Location{}".format(sys.argv[2])
+else:
+    # fallback to default location from settings (used on XBMC4Xbox 3.5.3)
+    defaultLocation = "Location{}".format(addon.getSetting('default'))
+
 locations = None
 lat = lon = None
 if addon.getSetting('use-from-xbmc') == 'false':
